@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cozy Cup Cafe - Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>☕ Cozy Cup Cafe</h1>
+
+    <button id="theme-button">Light / Dark Mode</button>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <h2>Our Menu</h2>
+
+    <div class="filters">
+
+        <button class="filter-button" data-filter="all">
+            All
+        </button>
+
+        <button class="filter-button" data-filter="coffee">
+            Coffee
+        </button>
+
+        <button class="filter-button" data-filter="food">
+            Food
+        </button>
+
+        <button class="filter-button" data-filter="dessert">
+            Desserts
+        </button>
+
+    </div>
+
+    <table id="menu-table">
+
+        <tr>
+            <th>Item</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Select</th>
+        </tr>
+
+        <tr class="menu-item coffee">
+            <td>Cappuccino</td>
+            <td>Coffee</td>
+            <td>$5</td>
+            <td>
+                <input class="menu-checkbox" type="checkbox" value="5">
+            </td>
+        </tr>
+
+        <tr class="menu-item coffee">
+            <td>Latte</td>
+            <td>Coffee</td>
+            <td>$4</td>
+            <td>
+                <input class="menu-checkbox" type="checkbox" value="4">
+            </td>
+        </tr>
+
+        <tr class="menu-item food">
+            <td>Chicken Sandwich</td>
+            <td>Food</td>
+            <td>$7</td>
+            <td>
+                <input class="menu-checkbox" type="checkbox" value="7">
+            </td>
+        </tr>
+
+        <tr class="menu-item food">
+            <td>Club Sandwich</td>
+            <td>Food</td>
+            <td>$8</td>
+            <td>
+                <input class="menu-checkbox" type="checkbox" value="8">
+            </td>
+        </tr>
+
+        <tr class="menu-item dessert">
+            <td>Chocolate Cake</td>
+            <td>Dessert</td>
+            <td>$6</td>
+            <td>
+                <input class="menu-checkbox" type="checkbox" value="6">
+            </td>
+        </tr>
+
+        <tr class="menu-item dessert">
+            <td>Cheesecake</td>
+            <td>Dessert</td>
+            <td>$6</td>
+            <td>
+                <input class="menu-checkbox" type="checkbox" value="6">
+            </td>
+        </tr>
+
+    </table>
+
+    <h3 id="total">Total: $0</h3>
+
+    <h2>Your Order</h2>
+
+    <p>Select items above to calculate your total.</p>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
